@@ -1,0 +1,753 @@
+[
+    {
+        "date": "2026-07-22",
+        "time": "22:31",
+        "buy": 192437,
+        "sell": 192587,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-22",
+        "time": "22:36",
+        "buy": 192361,
+        "sell": 192511,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-22",
+        "time": "22:37",
+        "buy": 192640,
+        "sell": 192790,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-22",
+        "time": "22:40",
+        "buy": 192710,
+        "sell": 192860,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-22",
+        "time": "22:56",
+        "buy": 193024,
+        "sell": 193174,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-22",
+        "time": "23:01",
+        "buy": 193157,
+        "sell": 193307,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-22",
+        "time": "23:58",
+        "buy": 193352,
+        "sell": 193502,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "00:12",
+        "buy": 193320,
+        "sell": 193470,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "00:24",
+        "buy": 193418,
+        "sell": 193568,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "00:25",
+        "buy": 193302,
+        "sell": 193452,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "00:28",
+        "buy": 193101,
+        "sell": 193251,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "00:48",
+        "buy": 192944,
+        "sell": 193094,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "00:52",
+        "buy": 193055,
+        "sell": 193205,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "01:02",
+        "buy": 193182,
+        "sell": 193332,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "01:22",
+        "buy": 192896,
+        "sell": 193046,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "01:25",
+        "buy": 192876,
+        "sell": 193026,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "01:26",
+        "buy": 192884,
+        "sell": 193034,
+        "change_amount": 8,
+        "change_percent": 0.0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "01:33",
+        "buy": 192832,
+        "sell": 192982,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "01:34",
+        "buy": 192828,
+        "sell": 192978,
+        "change_amount": -4,
+        "change_percent": -0.0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "01:35",
+        "buy": 192755,
+        "sell": 192905,
+        "change_amount": -73,
+        "change_percent": -0.04,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "01:36",
+        "buy": 192758,
+        "sell": 192908,
+        "change_amount": 3,
+        "change_percent": 0.0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "01:37",
+        "buy": 192844,
+        "sell": 192994,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "02:19",
+        "buy": 192836,
+        "sell": 192986,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "02:34",
+        "buy": 192916,
+        "sell": 193066,
+        "change_amount": 80,
+        "change_percent": 0.04,
+        "sources": [
+            "Bitpin",
+            "Tabdeal"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "02:45",
+        "buy": 192857,
+        "sell": 193007,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "03:00",
+        "buy": 192728,
+        "sell": 192878,
+        "change_amount": -129,
+        "change_percent": -0.07,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "03:15",
+        "buy": 192911,
+        "sell": 193061,
+        "change_amount": 183,
+        "change_percent": 0.09,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "03:30",
+        "buy": 193057,
+        "sell": 193207,
+        "change_amount": 146,
+        "change_percent": 0.08,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "03:45",
+        "buy": 192625,
+        "sell": 192775,
+        "change_amount": -432,
+        "change_percent": -0.22,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "04:00",
+        "buy": 192761,
+        "sell": 192911,
+        "change_amount": 136,
+        "change_percent": 0.07,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "04:11",
+        "buy": 192624,
+        "sell": 192774,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "04:12",
+        "buy": 192744,
+        "sell": 192894,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "04:15",
+        "buy": 192785,
+        "sell": 192935,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "04:30",
+        "buy": 192687,
+        "sell": 192837,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "04:31",
+        "buy": 192743,
+        "sell": 192893,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "04:45",
+        "buy": 192643,
+        "sell": 192793,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "05:00",
+        "buy": 192930,
+        "sell": 193080,
+        "change_amount": 287,
+        "change_percent": 0.15,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "05:15",
+        "buy": 192581,
+        "sell": 192731,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "05:30",
+        "buy": 192909,
+        "sell": 193059,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "05:45",
+        "buy": 192850,
+        "sell": 193000,
+        "change_amount": -59,
+        "change_percent": -0.03,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "06:00",
+        "buy": 192827,
+        "sell": 192977,
+        "change_amount": -23,
+        "change_percent": -0.01,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "06:15",
+        "buy": 192856,
+        "sell": 193006,
+        "change_amount": 29,
+        "change_percent": 0.02,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "06:30",
+        "buy": 193018,
+        "sell": 193168,
+        "change_amount": 162,
+        "change_percent": 0.08,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "06:45",
+        "buy": 192909,
+        "sell": 193059,
+        "change_amount": -109,
+        "change_percent": -0.06,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "07:00",
+        "buy": 192986,
+        "sell": 193136,
+        "change_amount": 77,
+        "change_percent": 0.04,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "07:15",
+        "buy": 192801,
+        "sell": 192951,
+        "change_amount": -185,
+        "change_percent": -0.1,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "07:30",
+        "buy": 192902,
+        "sell": 193052,
+        "change_amount": 101,
+        "change_percent": 0.05,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "07:45",
+        "buy": 192861,
+        "sell": 193011,
+        "change_amount": -41,
+        "change_percent": -0.02,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "08:00",
+        "buy": 192900,
+        "sell": 193050,
+        "change_amount": 39,
+        "change_percent": 0.02,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "08:15",
+        "buy": 193039,
+        "sell": 193189,
+        "change_amount": 139,
+        "change_percent": 0.07,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "08:30",
+        "buy": 193184,
+        "sell": 193334,
+        "change_amount": 145,
+        "change_percent": 0.08,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "08:45",
+        "buy": 193267,
+        "sell": 193417,
+        "change_amount": 83,
+        "change_percent": 0.04,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "09:00",
+        "buy": 193356,
+        "sell": 193506,
+        "change_amount": 89,
+        "change_percent": 0.05,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "09:15",
+        "buy": 193519,
+        "sell": 193669,
+        "change_amount": 163,
+        "change_percent": 0.08,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "09:30",
+        "buy": 193540,
+        "sell": 193690,
+        "change_amount": 21,
+        "change_percent": 0.01,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "09:45",
+        "buy": 193070,
+        "sell": 193220,
+        "change_amount": -470,
+        "change_percent": -0.24,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-07-23",
+        "time": "10:00",
+        "buy": 192954,
+        "sell": 193104,
+        "change_amount": -116,
+        "change_percent": -0.06,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    },
+    {
+        "date": "2026-08-02",
+        "time": "17:55",
+        "buy": 192176,
+        "sell": 192326,
+        "change_amount": 0,
+        "change_percent": 0,
+        "sources": [
+            "Bitpin",
+            "Tabdeal",
+            "Nobitex"
+        ]
+    }
+]
