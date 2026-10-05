@@ -1,15 +1,36 @@
 import aiohttp
 import asyncio
 import time
+
 from logger import logger
+
+
+# ============================================================
+# TetherTrust - Price Service
+# ============================================================
+
+print("🔥 NEW PRICE_SERVICE.PY LOADED 🔥")
 
 
 TIMEOUT = aiohttp.ClientTimeout(total=15)
 
 
+HEADERS = {
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "User-Agent": "TetherTrustBot/1.0",
+}
+
+
+# ============================================================
+# Bitpin
+# ============================================================
+
 async def get_bitpin_price(session):
 
     try:
+
         url = "https://api.bitpin.ir/v1/mkt/markets/"
 
         params = {
@@ -20,11 +41,7 @@ async def get_bitpin_price(session):
             url,
             params=params,
             timeout=TIMEOUT,
-            headers={
-                "Cache-Control": "no-cache",
-                "Pragma": "no-cache",
-                "User-Agent": "TetherTrustBot/1.0",
-            },
+            headers=HEADERS,
         ) as response:
 
             logger.info(
@@ -42,9 +59,15 @@ async def get_bitpin_price(session):
 
             if item.get("code") == "USDT_IRT":
 
-                price = int(
-                    float(item["price"])
-                )
+                price = item.get("price")
+
+                if price is None:
+                    logger.warning(
+                        "Bitpin price is missing"
+                    )
+                    return None
+
+                price = int(float(price))
 
                 logger.info(
                     "Bitpin LIVE price: %s",
@@ -57,7 +80,7 @@ async def get_bitpin_price(session):
                 }
 
         logger.warning(
-            "Bitpin: USDT_IRT not found"
+            "Bitpin: USDT_IRT market not found"
         )
 
     except Exception as e:
@@ -69,6 +92,10 @@ async def get_bitpin_price(session):
 
     return None
 
+
+# ============================================================
+# Nobitex
+# ============================================================
 
 async def get_nobitex_price(session):
 
@@ -86,11 +113,7 @@ async def get_nobitex_price(session):
             url,
             params=params,
             timeout=TIMEOUT,
-            headers={
-                "Cache-Control": "no-cache",
-                "Pragma": "no-cache",
-                "User-Agent": "TetherTrustBot/1.0",
-            },
+            headers=HEADERS,
         ) as response:
 
             logger.info(
@@ -106,6 +129,8 @@ async def get_nobitex_price(session):
 
         latest = data["stats"]["usdt-rls"]["latest"]
 
+        # Nobitex قیمت را به ریال برمی‌گرداند
+        # تبدیل ریال به تومان
         price = int(
             float(latest) / 10
         )
@@ -130,6 +155,10 @@ async def get_nobitex_price(session):
     return None
 
 
+# ============================================================
+# Tabdeal
+# ============================================================
+
 async def get_tabdeal_price(session):
 
     try:
@@ -144,11 +173,7 @@ async def get_tabdeal_price(session):
             url,
             params=params,
             timeout=TIMEOUT,
-            headers={
-                "Cache-Control": "no-cache",
-                "Pragma": "no-cache",
-                "User-Agent": "TetherTrustBot/1.0",
-            },
+            headers=HEADERS,
         ) as response:
 
             logger.info(
@@ -180,15 +205,31 @@ async def get_tabdeal_price(session):
                 second.get("symbol") == "IRT"
             ):
 
-                price = item[
-                    "margin_config"
-                ][
-                    "pair"
-                ][
-                    "last_trade_price"
-                ]
+                margin_config = item.get(
+                    "margin_config",
+                    {}
+                )
 
-                price = int(float(price))
+                pair = margin_config.get(
+                    "pair",
+                    {}
+                )
+
+                last_trade_price = pair.get(
+                    "last_trade_price"
+                )
+
+                if last_trade_price is None:
+
+                    logger.warning(
+                        "Tabdeal last_trade_price missing"
+                    )
+
+                    return None
+
+                price = int(
+                    float(last_trade_price)
+                )
 
                 logger.info(
                     "Tabdeal LIVE price: %s",
@@ -201,7 +242,7 @@ async def get_tabdeal_price(session):
                 }
 
         logger.warning(
-            "Tabdeal: USDT/IRT not found"
+            "Tabdeal: USDT/IRT market not found"
         )
 
     except Exception as e:
@@ -214,14 +255,29 @@ async def get_tabdeal_price(session):
     return None
 
 
+# ============================================================
+# Collect all prices
+# ============================================================
+
 async def collect_prices():
 
-    async with aiohttp.ClientSession() as session:
+    logger.info(
+        "========== FETCHING LIVE PRICES =========="
+    )
+
+    async with aiohttp.ClientSession(
+        timeout=TIMEOUT,
+        headers=HEADERS,
+    ) as session:
 
         results = await asyncio.gather(
+
             get_bitpin_price(session),
+
             get_nobitex_price(session),
+
             get_tabdeal_price(session),
+
             return_exceptions=True,
         )
 
@@ -242,7 +298,10 @@ async def collect_prices():
 
             price = item.get("price")
 
-            if price and price > 0:
+            if (
+                isinstance(price, (int, float))
+                and price > 0
+            ):
 
                 prices.append(item)
 
@@ -254,6 +313,10 @@ async def collect_prices():
     return prices
 
 
+# ============================================================
+# Calculate average
+# ============================================================
+
 async def get_average_price():
 
     sources = await collect_prices()
@@ -261,10 +324,14 @@ async def get_average_price():
     if not sources:
 
         logger.error(
-            "NO PRICE SOURCES AVAILABLE"
+            "❌ NO PRICE SOURCES AVAILABLE"
         )
 
         return None
+
+    # --------------------------------------------------------
+    # Initial average
+    # --------------------------------------------------------
 
     values = [
         item["price"]
@@ -272,13 +339,20 @@ async def get_average_price():
     ]
 
     initial_average = (
-        sum(values) / len(values)
+        sum(values)
+        /
+        len(values)
     )
 
     logger.info(
-        "Initial average: %s",
+        "Initial average: %.2f",
         initial_average
     )
+
+    # --------------------------------------------------------
+    # Remove abnormal prices
+    # Maximum allowed difference = 1%
+    # --------------------------------------------------------
 
     valid = []
 
@@ -287,9 +361,11 @@ async def get_average_price():
         difference = (
             abs(
                 item["price"]
-                - initial_average
+                -
+                initial_average
             )
-            / initial_average
+            /
+            initial_average
         )
 
         logger.info(
@@ -299,36 +375,5 @@ async def get_average_price():
         )
 
         if difference < 0.01:
-            valid.append(item)
 
-    if valid:
-
-        average = int(
-            sum(
-                item["price"]
-                for item in valid
-            )
-            / len(valid)
-        )
-
-    else:
-
-        average = int(
-            initial_average
-        )
-
-    result = {
-        "price": average,
-        "sources": [
-            item["name"]
-            for item in valid
-        ],
-    }
-
-    logger.info(
-        "FINAL LIVE PRICE: %s | SOURCES: %s",
-        result["price"],
-        result["sources"]
-    )
-
-    return result
+            valid.append(item
