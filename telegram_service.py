@@ -7,7 +7,7 @@ from telegram import Bot
 # Telegram Configuration
 # =========================
 
-BOT_TOKEN = os.getenv("8616982240:AAFH1oMKar8Ve2Y961qkCm5-9LjVZDDtJLw")
+BOT_TOKEN = os.getenv("8616982240:AAE2cUVyRrd8aUp5cAZtan7yAk_VJFXuauA")
 CHANNEL_ID = "@TetherTrust_Official"
 
 
@@ -19,7 +19,7 @@ class TelegramService:
 
     def __init__(self):
 
-        if not BOT_TOKEN:
+        if not BOT_TOKEN:"8616982240:AAE2cUVyRrd8aUp5cAZtan7yAk_VJFXuauA"
             raise ValueError(
                 "BOT_TOKEN is not set in Railway Variables"
             )
