@@ -8,7 +8,6 @@ from telegram import Bot
 # =========================
 
 BOT_TOKEN = os.getenv("8616982240:AAFH1oMKar8Ve2Y961qkCm5-9LjVZDDtJLw")
-
 CHANNEL_ID = "@TetherTrust_Official"
 
 
@@ -17,25 +16,19 @@ CHANNEL_ID = "@TetherTrust_Official"
 # =========================
 
 class TelegramService:
-    """
-    مدیریت ارسال پیام‌های TetherTrust به کانال تلگرام
-    """
 
     def __init__(self):
 
-        if not BOT_TOKEN:"8616982240:AAFH1oMKar8Ve2Y961qkCm5-9LjVZDDtJLw"
+        if not BOT_TOKEN:
             raise ValueError(
                 "BOT_TOKEN is not set in Railway Variables"
             )
 
         self.bot = Bot(
-            token="8616982240:AAFH1oMKar8Ve2Y961qkCm5-9LjVZDDtJLw"
+            token=BOT_TOKEN
         )
 
     async def send_message(self, text):
-        """
-        ارسال پیام به کانال
-        """
 
         try:
 
@@ -54,5 +47,9 @@ class TelegramService:
 
             return False
 
+
+# =========================
+# Create Telegram Service
+# =========================
 
 telegram_service = TelegramService()
