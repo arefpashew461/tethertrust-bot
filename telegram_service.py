@@ -1,7 +1,9 @@
 from telegram import Bot
 
-from config import 'AAFH1oMKar8Ve2Y961qkCm5-9LjVZDDtJLw'
-    CHANNEL_ID '@TetherTrust_Official'
+from config import (
+    BOT_TOKEN,
+    CHANNEL_ID
+)
 
 
 
@@ -13,7 +15,7 @@ class TelegramService:
     def __init__(self):
 
         self.bot = Bot(
-            token='AAFH1oMKar8Ve2Y961qkCm5-9LjVZDDtJLw'
+            token=BOT_TOKEN
         )
 
 
@@ -30,7 +32,7 @@ class TelegramService:
 
             await self.bot.send_message(
 
-                chat_id='@TetherTrust_Official'
+                chat_id=CHANNEL_ID,
 
                 text=text
 
